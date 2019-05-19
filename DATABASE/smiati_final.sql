@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Mei 2019 pada 06.53
+-- Generation Time: 19 Mei 2019 pada 07.52
 -- Versi Server: 10.1.9-MariaDB
 -- PHP Version: 7.0.0
 
@@ -74,6 +74,7 @@ INSERT INTO `akunalumni` (`Password`, `NIM`) VALUES
 CREATE TABLE `alumni` (
   `NIM` varchar(10) NOT NULL,
   `NAMA` varchar(25) NOT NULL,
+  `Jenis_Kelamin` varchar(10) NOT NULL,
   `Tahun_Lulus` char(4) NOT NULL,
   `Tempat_KP` varchar(30) NOT NULL,
   `IPK` double NOT NULL,
@@ -86,16 +87,16 @@ CREATE TABLE `alumni` (
 -- Dumping data untuk tabel `alumni`
 --
 
-INSERT INTO `alumni` (`NIM`, `NAMA`, `Tahun_Lulus`, `Tempat_KP`, `IPK`, `Riwayat_Kerja`, `Judul_TA`, `email`) VALUES
-('14117002', 'Adila Gita Risnanda', '2021', 'Surabaya', 4, 'Papua', 'Sistem Parkir Online', 'adila.14117002@student.itera.ac.id'),
-('14117003', 'Wahyu Wiranti', '2021', 'Wayhuwi', 3.5, 'Jati Agung', 'Perpustakaan Online', 'wahyu.14117003@student.itera.ac.id'),
-('14117004', 'Fatin Delfiantina', '2021', 'Wayhuwi', 3.4, 'Jati Agung', 'Sistem Pemesanan Bus Online', 'wahyu.14117003@student.itera.ac.id'),
-('14117005', 'Latisya', '2021', 'Malang', 3.7, 'Web design di Surabaya', 'Sistem manajemen asprak', 'latisya.14117005@student.itera.ac.id'),
-('14117046', 'Annisa Maharani', '2021', 'Jakarta', 4, 'Programmer di Jakarta', 'Sistem Informasi Akademik', 'annisa.14117046@student.itera.ac.id'),
-('14117067', 'Irma Safitri', '2021', 'Buka Lapak, Jakarta', 3.7, 'Buka Lapak, Jakarta', 'Sistem Informasi Alumni', 'irma.14117067@student.itera.ac.id'),
-('14117071', 'Nurul Fauzia Azizah', '2021', 'Bandung', 4, 'Programmer di perusahaan Gojek', 'Sistem Peminjaman Ruangan', 'nurul.1411071@student.itera.ac.id'),
-('14117086', 'Nurtias Rahayu', '2019', 'Shopee', 3.7, 'Shopee', 'Sistem Pembagian Kelompok', 'nurtias.14117086@student.itera.ac.id'),
-('14117091', 'Hiskia Perdamen Pulungan', '2021', 'Grab, jakarta', 3, 'Grab', 'Sistem Absensi Online', 'hiskia.14117091@student.itera.ac.id');
+INSERT INTO `alumni` (`NIM`, `NAMA`, `Jenis_Kelamin`, `Tahun_Lulus`, `Tempat_KP`, `IPK`, `Riwayat_Kerja`, `Judul_TA`, `email`) VALUES
+('14117002', 'Adila Gita Risnanda', 'Perempuan', '2021', 'Surabaya', 4, 'Papua', 'Sistem Parkir Online', 'adila.14117002@student.itera.ac.id'),
+('14117003', 'Wahyu Wiranti', 'Perempuan', '2021', 'Wayhuwi', 3.5, 'Jati Agung', 'Perpustakaan Online', 'wahyu.14117003@student.itera.ac.id'),
+('14117004', 'Fatin Delfiantina', 'Perempuan', '2021', 'Wayhuwi', 3.4, 'Jati Agung', 'Sistem Pemesanan Bus Online', 'wahyu.14117003@student.itera.ac.id'),
+('14117005', 'Latisya', 'Perempuan', '2021', 'Malang', 3.7, 'Web design di Surabaya', 'Sistem manajemen asprak', 'latisya.14117005@student.itera.ac.id'),
+('14117046', 'Annisa Maharani', 'Perempuan', '2021', 'Jakarta', 4, 'Programmer di Jakarta', 'Sistem Informasi Akademik', 'annisa.14117046@student.itera.ac.id'),
+('14117067', 'Irma Safitri', 'Perempuan', '2021', 'Buka Lapak, Jakarta', 3.7, 'Buka Lapak, Jakarta', 'Sistem Informasi Alumni', 'irma.14117067@student.itera.ac.id'),
+('14117071', 'Nurul Fauzia Azizah', 'Perempuan', '2021', 'Bandung', 4, 'Programmer di perusahaan Gojek', 'Sistem Peminjaman Ruangan', 'nurul.1411071@student.itera.ac.id'),
+('14117086', 'Nurtias Rahayu', 'Perempuan', '2019', 'Shopee', 3.7, 'Shopee', 'Sistem Pembagian Kelompok', 'nurtias.14117086@student.itera.ac.id'),
+('14117091', 'Hiskia Perdamen Pulungan', 'Laki-Laki', '2021', 'Grab, jakarta', 3, 'Grab', 'Sistem Absensi Online', 'hiskia.14117091@student.itera.ac.id');
 
 -- --------------------------------------------------------
 
