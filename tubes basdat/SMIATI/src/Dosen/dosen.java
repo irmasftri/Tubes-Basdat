@@ -10,5 +10,22 @@ package Dosen;
  * @author Acer id
  */
 public class dosen {
+    public String nip;
+    public String nama;
+    public String email;
+    public dosen(String nip, String nama, String email){
+        this.nip=nip;
+        this.nama=nama;
+        this.email=email;
+    }
     
+    public String getNip(){
+        return nip;
+    }
+    public String getNama(){
+        return nama;
+    }
+    public String getEmail(){
+        return email;
+    }
 }
